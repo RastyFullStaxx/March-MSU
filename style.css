@@ -20,6 +20,16 @@ body {
     background-attachment: fixed; /* Optional for parallax feel */
   }
 
+  .bg-warning:hover,
+  .bg-success:hover,
+  .p-4:hover,
+  .table-responsive:hover,
+  .registration-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+
 /* === NAVBAR STYLING === */
 
 .glass-navbar {
@@ -272,7 +282,7 @@ body {
    }
    
    #schedule table thead th {
-     background-color: #006F3D;
+     background-color: #333;
      color: #ffffff;
      font-weight: 10000;
    }
@@ -282,7 +292,7 @@ body {
     }
 
     #schedule table tbody tr:hover {
-      background-color: rgba(0, 0, 0, 0.03);
+      background-color: #030f0a6b;
     }
 
     #schedule .badge {
@@ -299,8 +309,15 @@ body {
     #schedule table th,
     #schedule table td {
       border-width: 1px !important;
-      border-color: #33333385; /* Light gray for elegance */
+      border-color: #75747498; /* Light gray for elegance */
     }
+
+    /* Optional: soften table-light background */
+    .table-light td {
+      background-color: #f9fcf98a !important;
+    }
+
+
 
 /* === REGISTRATION SECTION === */
 #registration {
