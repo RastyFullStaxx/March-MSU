@@ -15,7 +15,7 @@ White	                —	            #FFFFFF
 body {
     font-family: 'Poppins', sans-serif;
     color: #333; 
-    background: url('/assets/hero-bg.webp') no-repeat center top;
+    background: url('assets/hero-bg.webp') no-repeat center top;
     background-size: cover;
     background-attachment: fixed; /* Optional for parallax feel */
   }
