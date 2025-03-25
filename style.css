@@ -1,0 +1,427 @@
+/*
+
+Purpose	                Color Name	    HEX Code
+
+Primary Green	        RL Green	    #006F3D
+Accent Green	        Lime Green	    #7BBE4A
+Secondary	            RL Yellow	    #F3D547
+Neutral Light	        RL Light	    #F7F7F7
+Text Dark	            RL Charcoal	    #333333
+White	                —	            #FFFFFF 
+
+*/
+
+/* === GLOBAL STYLING === */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333; 
+    background: url('/assets/hero-bg.webp') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed; /* Optional for parallax feel */
+  }
+
+/* === NAVBAR STYLING === */
+
+.glass-navbar {
+    background-color: rgba(255, 255, 255, 0.1); /* semi-transparent */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000; /* Always on top */
+  }
+  
+  
+  .navbar .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover,
+  .navbar .nav-link.active {
+    color: #F3D547 !important; /* RL Yellow on hover/active */
+  }
+  
+  .navbar-brand img {
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+  }
+  
+  .navbar-toggler {
+    border-color: #ffffff;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  .navbar .btn {
+    background-color: #F3D547; /* RL Yellow */
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar .btn:hover {
+    background-color: #006F3D;
+    color: #000;
+  }
+
+  form[role="search"] .form-control {
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  form[role="search"] .form-control:focus {
+    border-color: #006F3D; /* RL Green */
+    box-shadow: 0 0 0 0.2rem rgba(0, 111, 61, 0.25);
+  }
+  
+  form[role="search"] .btn {
+    background-color: #006F3D;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  form[role="search"] .btn:hover {
+    background-color: #F3D547;
+  }
+  
+/* === Hero Section === */
+  .backdrop-blur-md {
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .card.bg-opacity-10 {
+      background-color: rgba(255, 255, 255, 0.1); /* subtle glass effect */
+      color: 333333;
+      border-radius: 1rem;
+    }
+    
+    #hero {
+      padding-top: 6rem; /* Adjust based on navbar height */
+    }
+    
+    .hero-btn-primary {
+      background-color: #F3D547;
+      color: #000;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    
+    .hero-btn-primary:hover {
+      background-color: #7BBE4A;
+      color: #000;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+      
+/* View Schedule Button */
+.hero-btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.hero-btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #F3D547;
+  border-color: #F3D547;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* About section carousel quote text */
+  #about {
+    background-color: #006F3D;
+  }
+  #highlightCarousel .carousel-item h5 {
+      font-size: 1.25rem;
+      color: #333;
+    }
+  
+  #highlightCarousel .carousel-item p {
+    color: #666;
+    font-style: italic;
+  }
+  
+  /* Rounded carousel images */
+  #imageCarousel img {
+    object-fit: cover;
+    height: 400px;
+  }
+  /* Make transitions more noticeable */
+  #highlightCarousel .carousel-item {
+      opacity: 0;
+      transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+      transform: translateX(10px);
+    }
+    
+    #highlightCarousel .carousel-item.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    #highlightCarousel .carousel-item {
+        opacity: 0;
+        transform: translateX(20px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+      
+      #highlightCarousel .carousel-item.active {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    
+    #about {
+      background-color: #ffffff79;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+/* === SPEAKER SECTION === */
+.speaker-img {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .speaker-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    .speaker-linkedin {
+      transition: all 0.3s ease;
+    }
+    .speaker-linkedin:hover {
+      background-color: #ffffff;
+      color: #fff;
+      border-color: #0a66c2;
+    }
+
+    .glass-card {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .glass-card {
+        padding: 2rem;
+        border-radius: 1rem;
+      }
+
+     .speaker-linkedin {
+         background-color: #006F3D; /* RL Green */
+         color: #fff;
+         border: 2px solid #006F3D;
+         font-weight: 500;
+         padding: 0.5rem 1.25rem;
+         border-radius: 0.5rem;
+         transition: all 0.3s ease;
+       }
+       
+       .speaker-linkedin:hover {
+         background-color: #F3D547; /* LinkedIn Blue */
+         border-color: #F3D547;
+         color: #333;
+         text-decoration: none;
+       }
+  
+/* === VENUE SECTION === */
+.venue-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+  }
+  
+  .venue-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .venue-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  #venue {
+     background-color: #ffffff70;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+   }
+   
+ /* === SCHEDULE SECTION === */
+   #schedule table {
+     border-radius: 1rem;
+     overflow: hidden;
+   }
+   
+   #schedule .table-responsive {
+     border-radius: 1rem;
+     background-color: rgba(255, 255, 255, 0.25);
+     backdrop-filter: blur(10px);
+     -webkit-backdrop-filter: blur(10px);
+     border: 3px solid #333;
+   }
+   
+   #schedule table thead th {
+     background-color: #006F3D;
+     color: #ffffff;
+     font-weight: 10000;
+   }
+   
+    #schedule table tbody tr {
+      transition: background-color 0.3s ease;
+    }
+
+    #schedule table tbody tr:hover {
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    #schedule .badge {
+      font-size: 0.9rem;
+      padding: 0.5em 1em;
+      border-radius: 30px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    #schedule .badge:hover {
+      transform: scale(1.05);
+    }
+    #schedule table th,
+    #schedule table td {
+      border-width: 1px !important;
+      border-color: #33333385; /* Light gray for elegance */
+    }
+
+/* === REGISTRATION SECTION === */
+#registration {
+    background-color: #006F3D; /* Real Life Foundation Green */
+    color: #fff;
+  }
+  
+  /* Card with soft green tint and blur */
+  .registration-card {
+    background-color: rgba(255, 255, 255, 0.15); /* Glass-like white tint */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    color: #000;
+  }
+  
+  /* Input Field Styling */
+  .registration-card .form-control {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    color: #000;
+  }
+  
+  .registration-card .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(243, 213, 71, 0.4); /* RL Yellow glow */
+    border-color: #F3D547;
+  }
+  
+  .registration-card label {
+         color: #333;
+       }
+       
+    /* Submit Button - RL Green base */
+    .registration-card button {
+      background-color: #F3D547; /* RL Yellow */
+      color: #000;
+      border: none;
+      transition: all 0.3s ease;
+      font-weight: 600;
+    }
+
+    .registration-card button:hover {
+      background-color: #7BBE4A; /* Slightly deeper yellow */
+      color: #fff;
+    }
+
+/* === FOOTER === */
+.glass-footer {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 999;
+  }
+  
+  /* Icon hover effect */
+  .glass-footer a:hover {
+      color: #F3D547; /* Real Life Yellow Accent */
+    }
+  
+/* === REAL LIFE ALERT === */
+.rl-alert {
+    background-color: #F3D547;
+    color: #000;
+    font-weight: 500;
+    border: 1px solid #e6c33d;
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+/* === SEARCH HIGHLIGHT EFFECT === */
+.highlight-section {
+    outline: 4px solid #F3D547;
+    outline-offset: 8px;
+    border-radius: 1rem;
+    transition: outline 0.3s ease;
+  }
+  
+/* === NAVBAR ELEMENT SHADOWS === */
+.navbar .nav-link {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 0.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Search input field */
+.navbar .form-control[type="search"] {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.navbar .form-control[type="search"]:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 111, 61, 0.3);
+  border-color: #e6c33d;
+}
+
+/* Search button */
+.navbar .btn[type="submit"] {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.navbar .btn[type="submit"]:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  background-color: #F3D547;
+  color: #000;
+}
+
+  
+      
+  
+    
+      
+  
+
+  
